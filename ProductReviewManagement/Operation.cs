@@ -98,6 +98,11 @@ namespace ProductReviewManagement
             var result = list.Average(x => x.Rating);
             Console.WriteLine(result);
         }
+        public void RetriveUsingReview(List<Product> list)
+        {
+            var result = list.Where(x => x.Review.Equals("bad"));
+            Display(result.ToList());
+        }
 
 
     }

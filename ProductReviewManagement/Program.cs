@@ -129,7 +129,7 @@ internal class Program
         });
 
         Operation operation = new Operation();
-        operation.AvgRating(list);
+        operation.RetriveUsingReview(list);
 
 
     }
