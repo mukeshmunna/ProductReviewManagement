@@ -26,6 +26,14 @@ internal class Program
         list.Add(new Product()
         {
             ProductID = 1,
+            UserID = 3,
+            Rating = 3,
+            Review = "Avg",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 1,
             UserID = 4,
             Rating = 1,
             Review = "bad",
@@ -50,6 +58,14 @@ internal class Program
         list.Add(new Product()
         {
             ProductID = 2,
+            UserID = 3,
+            Rating = 4,
+            Review = "Good",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 2,
             UserID = 5,
             Rating = 5,
             Review = "Good",
@@ -74,6 +90,14 @@ internal class Program
         list.Add(new Product()
         {
             ProductID = 3,
+            UserID = 3,
+            Rating = 3,
+            Review = "avg",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 3,
             UserID = 2,
             Rating = 1,
             Review = "bad",
@@ -83,6 +107,14 @@ internal class Program
         {
             ProductID = 4,
             UserID = 1,
+            Rating = 5,
+            Review = "Good",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 4,
+            UserID = 2,
             Rating = 5,
             Review = "Good",
             isLike = true,
@@ -122,15 +154,31 @@ internal class Program
         list.Add(new Product()
         {
             ProductID = 5,
+            UserID = 3,
+            Rating = 3,
+            Review = "avg",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 5,
+            UserID = 4,
+            Rating = 4,
+            Review = "good",
+            isLike = true,
+        });
+        list.Add(new Product()
+        {
+            ProductID = 5,
             UserID = 5,
             Rating = 5,
             Review = "good",
             isLike = true,
         });
 
-        Operation operation = new Operation();
-        operation.RetriveUsingReview(list);
 
+        Operation operation = new Operation();
+        operation.RetriveUsingRating(list);
 
     }
 }

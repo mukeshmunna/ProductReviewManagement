@@ -103,7 +103,11 @@ namespace ProductReviewManagement
             var result = list.Where(x => x.Review.Equals("bad"));
             Display(result.ToList());
         }
-
+        public void RetriveUsingRating(List<Product> list)
+        {
+            var result = list.Where(x => x.UserID.Equals(1)).OrderBy(x => x.Rating);
+            Display(result.ToList());
+        }
 
     }
 }
