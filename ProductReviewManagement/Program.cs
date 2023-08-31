@@ -129,6 +129,6 @@ internal class Program
         });
 
         Operation operation = new Operation();
-        operation.UsingGroupBy(list);
+        operation.RetreiveProductIdAndReview(list);
     }
 }
