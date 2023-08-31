@@ -128,8 +128,7 @@ internal class Program
             isLike = true,
         });
 
-        Operation operation = new Operation();
-        operation.RetrieveTopRecords(list);
-
+        Operation operation = new Operation(); 
+        operation.RetrieveAllRecordsWithCondition(list);
     }
 }
