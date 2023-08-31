@@ -128,7 +128,7 @@ internal class Program
             isLike = true,
         });
 
-        Operation operation = new Operation(); 
-        operation.RetrieveAllRecordsWithCondition(list);
+        Operation operation = new Operation();
+        operation.UsingGroupBy(list);
     }
 }

@@ -32,5 +32,13 @@ namespace ProductReviewManagement
             Display(result.ToList());
         }
 
+        public void UsingGroupBy(List<Product> list)
+        {
+            var result = list.GroupBy(x => x.ProductID).Select(x => new { ProductID = x.Key, Count = x.Count() });
+            foreach (var data in result)
+            {
+                Console.WriteLine(data.ProductID + "   " + data.Count);
+            }
+        }
     }
 }
