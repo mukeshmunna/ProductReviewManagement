@@ -130,7 +130,7 @@ internal class Program
 
         Operation operation = new Operation();
         operation.AddDataToDataTable(list);
-
+        operation.RetreiveRecordsFromDataTable();
 
 
     }

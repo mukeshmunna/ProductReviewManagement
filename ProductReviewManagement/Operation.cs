@@ -85,6 +85,14 @@ namespace ProductReviewManagement
                 Console.WriteLine(item.Field<bool>("IsLike"));
             }
         }
+        public void RetreiveRecordsFromDataTable()
+        {
+            var result = table.AsEnumerable().Where(x => x.Field<bool>("IsLike").Equals(true));
+            foreach (var item in result.AsEnumerable())
+            {
+                Console.WriteLine(item.Field<int>("ProductId"));
+            }
+        }
 
     }
 }
