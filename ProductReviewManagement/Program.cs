@@ -129,6 +129,7 @@ internal class Program
         });
 
         Operation operation = new Operation();
-        operation.RetreiveProductIdAndReview(list);
+        operation.SkipTopRecords(list);
+
     }
 }
