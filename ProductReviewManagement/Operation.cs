@@ -93,6 +93,12 @@ namespace ProductReviewManagement
                 Console.WriteLine(item.Field<int>("ProductId"));
             }
         }
+        public void AvgRating(List<Product> list)
+        {
+            var result = list.Average(x => x.Rating);
+            Console.WriteLine(result);
+        }
+
 
     }
 }
